@@ -1,44 +1,93 @@
-.lato-thin {
-  font-family: "Lato", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+/* Fonte */
+
+.font-face {
+    font-family: "Krona One";
+    src: url();
+    font-weight: 100;
+    font-style: normal;
 }	
 
-html, body,{
-  margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;}
+/* Reset CSS */
 
-body{
- line-height: 1;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/* Config. Principais*/
 
+html {
+    font-size: 30%;
+    box-sizing: border-box;
+}
 
 body {
-/*cor de teste*/
-  background-color: darkgray;
+/* cor de teste*/
+    background: darkgray;
+    color: darkgrey;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.025em;
+    line-height: 1.75;
 }
 
-/*Menu */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background:;
+    overflow: hidden;
+}
+
+/* Menu */
 .menu {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1001;
-  background: ;
-  border: none;
-  border-radius: 8px;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(10px);
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    background: ;
+    border: none;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+body,
+input,
+select,
+textarea {
+    color: aqua;
+    font-family: 'Krona One', sans-serif;
+    font-size: 15pt;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    line-height: 1.75em;
+}
+
+.name {
+    color: ;
+    font-size: 2rem;
+}
+
+a {
+    border-bottom: dottex 1px;
+    color: inherit;
+    outline: 0;
+    text-decoration: none;
+    transition: all;
 }
 
 /* Side menu*/
