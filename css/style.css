@@ -3,3 +3,46 @@
   font-weight: 100;
   font-style: normal;
 }	
+
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+/*cor de teste*/
+  background-color: gray;
+}
+
+/*Menu */
+.menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  background: ;
+  border: none;
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+/* Side menu*/
+.side-menu
+{position: fixed;
+  top: 0;
+  right: -350px;
+  width: 350px;
+  background: ;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  transition: ;
+  padding: 80px 0 40px;
+  
+}
