@@ -2,8 +2,9 @@
 @font-face {
     font-family: "Krona One";
     src:  url('../fonts/KronaOne-Regular.ttf') format('truetype');
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 
 /* Reset CSS */
@@ -69,24 +70,37 @@ a:active {
     top: 20px;
     left: 20px;
     z-index: 1001;
-    background: rgba(255, 255, 255, 0.1);
+    /*background: rgba(255, 255, 255, 0.1);*/
+    background: transparent;
     border: none;
-    border-radius: 8px;
-    width: 50px;
-    height: 50px;
+    border-radius: 15px;
+    /*width: 50px;
+    height: 50px;*/
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10xpx 15px;
     backdrop-filter: blur(10px);
     color: #fff;
-    font-size: 18px;
-    text-indent: 0%;
+    /*font-size: 18px;
+    text-indent: 0%;*/
     transition: all 0.3s ease;
 }
 
+.menu i {
+    font-size: 12px;
+    margin-right: 15px;
+}
+
+.menu span {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Krona One', sans-serif;
+    letter-spacing: 1px;
+}
 .menu:hover {
-    background: rgba(255, 255, 255, 0.2);
+    /*background: rgba(255, 255, 255, 0.2);*/
     transform: scale(1.05);
 }
 
@@ -100,7 +114,7 @@ a:active {
     background: #191516;
     backdrop-filter: blur(10px);
     z-index: 1000;
-    transition: right 0.3s ease;
+    transition: left 0.3s ease;
     padding: 80px 0 40px;
 }
 
@@ -129,6 +143,7 @@ a:active {
     letter-spacing: 1px;
     transition: all 0.3s ease;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: 'Krona One', sans-serif;
 }
 
 .side-menu a:hover {
@@ -152,7 +167,7 @@ a:active {
     animation: bg 60s linear infinite;
     backface-visibility: hidden;
     transform: translate3d(0, 0, 0);
-    background: color #0C1618;
+    background: color: #0C1618;
     background-size: 400% 400%;
     width: 100%;
     height: 100%;
@@ -287,7 +302,7 @@ a:active {
 .copyright {
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.8rem;
-    letter-spacing: 1px;!important;
+    letter-spacing: 1px !important;
 }
 
 /* Animações */
@@ -354,11 +369,15 @@ a:active {
     
     .side-menu {
         width: 280px;
-        right: -280px;
+        left: -280px;
     }
     
     #header {
         width: 95%;
+    }
+
+    .menu i, .menu span {
+        font-size: 16px;
     }
 }
 
@@ -380,12 +399,16 @@ a:active {
     
     .side-menu {
         width: 250px;
-        right: -250px;
+        left: -250px;
     }
     
     .side-menu a {
         padding: 15px 30px 15px 40px;
         font-size: 14px;
+    }
+
+    .menu i, .menu span {
+        font-size: 10px;
     }
 }
 
