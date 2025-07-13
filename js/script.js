@@ -232,17 +232,10 @@ function smoothScrollTo(target, duration = 1000) {
     requestAnimationFrame(animation);
 }
 
-// Console easter egg
-console.log(`
-    ╔═══════════════════════════════════════╗
-    ║                                       ║
-    ║        ΛDΞMΛR CIDΛSI Portfolio        ║
-    ║                                       ║
-    ║  Dev • Ilustrador • Open Source Fan   ║
-    ║                                       ║
-    ║         Feito com ❤️ e muito café      ║
-    ║                                       ║
-    ╚═══════════════════════════════════════╝
-`);
+// Update copyright year in footer
 
-console.log('🚀 Interessado no código? Confira meu GitHub: https://github.com/cid4si');
+document.addEventListener('DOMContentLoaded', function() {
+  const anoElement = document.querySelector('#ano');
+  const anoAtual = new Date().getFullYear();
+  anoElement.textContent = anoAtual;
+});
