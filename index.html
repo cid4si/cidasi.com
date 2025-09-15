@@ -24,18 +24,24 @@
   <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
- <!-- Custom CSS -->
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/main.css">
 
 </head>
 
 <body>
+  <!--Button Dark Mode-->
+    <button class="toggle-dark" id="toggle-dark" aria-label="Toggle Dark Mode">
+     <i class="fas fa-moon"></i>
+    </button>
+    
   <!-- Menu -->
   <button class="menu" id="menu">
-   <i class="fa-duotone fa-solid fa-bars" aria-hidden="true"></i><span>MENU</span></button>
+    <i class="fa-duotone fa-solid fa-bars" aria-hidden="true"></i><span>MENU</span></button>
 
   <nav class="side-menu" id="side-menu">
     <ul>
@@ -48,45 +54,54 @@
   <div id="wrapper">
     <div id="bg"></div>
     <div id="overlay"></div>
-    
+
     <div id="main">
       <header id="header">
         <!-- Bio + Info -->
         <h1 class="name" alt="ademar cidasi">ΛDΞMΛR CIDΛSI</h1><br>
-        <p class="apresentation"><strong>Dev. &nbsp;&bull;&nbsp; Ilustrador &nbsp;&bull;&nbsp; Fã de Open Source e Emocore.</strong></p>
-        
+        <p class="apresentation"><strong>Dev. &nbsp;&bull;&nbsp; Ilustrador &nbsp;&bull;&nbsp; Fã de Open Source e
+            Emocore.</strong></p>
+
         <!-- Icons -->
         <nav class="icon">
           <ul>
             <!-- Github -->
-            <li><a href="https://github.com/cid4si" alt="Github" class="icon fa-brands fa-github"><span class="label">github</span></a></li>
+            <li><a href="https://github.com/cid4si" alt="Github" class="icon fa-brands fa-github"><span
+                  class="label">github</span></a></li>
             <!-- Linkedin -->
-            <li><a href="https://www.linkedin.com/in/admrcds/" alt="Linkedin" class="icon fa-brands fa-linkedin"><span class="label">github</span></a></li>
+            <li><a href="https://www.linkedin.com/in/admrcds/" alt="Linkedin" class="icon fa-brands fa-linkedin"><span
+                  class="label">linkedin</span></a></li>
             <!-- Behance -->
-            <li><a href="https://www.behance.net/cid4si" alt="Behance" class="icon fa-brands fa-behance"><span class="label">behance</span></a></li>
+            <li><a href="https://www.behance.net/cid4si" alt="Behance" class="icon fa-brands fa-behance"><span
+                  class="label">behance</span></a></li>
             <!-- Instagram -->
-            <li><a href="https://www.instagram.com/cid4si/" alt="Instagram" class="icon fa-brands fa-instagram"><span class="label">instagram</span></a></li>
+            <li><a href="https://www.instagram.com/cid4si/" alt="Instagram" class="icon fa-brands fa-instagram"><span
+                  class="label">instagram</span></a></li>
             <!-- Bluesky -->
-            <li><a href="https://bsky.app/profile/cidasi.bsky.social" alt="Bluesky" class="icon fa-brands fa-bluesky"><span class="label">bluesky</span></a></li>
+            <li><a href="https://bsky.app/profile/cidasi.bsky.social" alt="Bluesky"
+                class="icon fa-brands fa-bluesky"><span class="label">bluesky</span></a></li>
             <!-- Spotify -->
-            <li><a href="https://open.spotify.com/playlist/3aEgtDt1LdIJnRbUy6csSh?si=OtT_HysdSiq5tAoAZGvg0w" alt="Spotify" class="icon fa-brands fa-spotify"><span class="label">spotify</span></a></li>
+            <li><a href="https://open.spotify.com/playlist/3aEgtDt1LdIJnRbUy6csSh?si=OtT_HysdSiq5tAoAZGvg0w"
+                alt="Spotify" class="icon fa-brands fa-spotify"><span class="label">spotify</span></a></li>
             <!-- Last.fm -->
-            <li><a href="https://www.last.fm/pt/user/cid4si" alt="Last.fm" class="icon fa-brands fa-lastfm"><span class="label">last.fm</span></a></li>
-            
+            <li><a href="https://www.last.fm/pt/user/cid4si" alt="Last.fm" class="icon fa-brands fa-lastfm"><span
+                  class="label">last.fm</span></a></li>
+
           </ul>
         </nav>
-        
+
       </header>
     </div>
   </div>
 
   <!-- Footer -->
-<footer id="footer">
-  <span class="copyright">&copy; <span id="ano"></span>, Ademar Cidasi. ☕🛠</span>
-</footer>
-    <script src="./js/script.js"></script>
-    <script src="https://kit.fontawesome.com/c481f5ca4b.js" crossorigin="anonymous"></script>
-    </script>
+  <footer id="footer">
+    <span class="copyright">&copy; <span id="ano"></span>, Ademar Cidasi. ☕🛠</span>
+  </footer>
+  <script src="./js/script.js"></script>
+  <script src="https://kit.fontawesome.com/c481f5ca4b.js" crossorigin="anonymous"></script>
+  <script src="./js/darkmode.js"></script>
+  </script>
 </body>
 
 </html>

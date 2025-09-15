@@ -7,6 +7,11 @@
     font-display: swap;
 }
 
+/*body {
+  font-family: 'Inter', Arial, 'Helvetica Neue', sans-serif;
+}*/
+
+
 /* Reset CSS */
 *,
 *::before,
@@ -167,7 +172,7 @@ a:active {
     animation: bg 60s linear infinite;
     backface-visibility: hidden;
     transform: translate3d(0, 0, 0);
-    background: color: #0C1618;
+    background: #0C1618;
     background-size: 400% 400%;
     width: 100%;
     height: 100%;
